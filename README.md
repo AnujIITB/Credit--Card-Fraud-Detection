@@ -23,15 +23,6 @@ The data set includes credit card transactions made by European cardholders over
 
 ## Project Pipeline
 
-**Get Started**
-1. Used machine learning models(logistic regresion, decision tree, random forest, xgboost) to classify transactions. Run `credit_card_fraud_detection.ipynb`.
-
-   • On the original unbalance data.
-   
-   • Did sampling(undersampling, oversampling, SMOTE, AdaSyn) on unbalance data.
-   
-2. Used deep learning model(autoencoder) to classify transaction. Run `credit_card_fraud_detection_using_autoencoders.ipynb`.
-
 The project pipeline can be briefly summarized in the following steps:
 
 1. Data understanding and exploring
@@ -60,8 +51,8 @@ The project pipeline can be briefly summarized in the following steps:
 
 6. Model building
 
-   • Train the model with various algorithm such as Logistic regression, SVM, Decision Tree, Random forest, XGBoost etc.
-
+   • Train the model with various algorithm such as Logistic regression, Support Vector machine , Decision Tree,K Nearest Neighbour , Random forest, XGBoost etc.
+   • improved performance of models using Ensemble Techniques i.e., AdaBoost, Gradient Boosting and RF
    • Tune the hyperparameters with Grid Search Cross Validation and find the optimal values of the hyperparameters
 
 7. Model evaluation 
@@ -71,3 +62,5 @@ The project pipeline can be briefly summarized in the following steps:
    • We have to look for a balance between Precision and Recall over Accuracy
 
    • We also have to find out the good ROC score with high TPR and low FPR in order to get the lower number of misclassifications
+  ## Results
+  Obtained highest F-1 score of 0.84 and Area Under Curve(AUC) score of 0.86 with XGBoost Classifier
